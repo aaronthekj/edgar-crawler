@@ -21,7 +21,7 @@ from urllib3.util import Retry
 
 # Python version compatibility for HTML parser
 try:
-	from html.parser.HTMLParser import HTMLParseError
+	from html.parser import HTMLParseError
 except ImportError:  # Python 3.5+
 	class HTMLParseError(Exception):
 		pass
